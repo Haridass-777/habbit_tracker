@@ -4,10 +4,12 @@ import { BrowserRouter } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext.jsx';
 import { DataProvider } from './context/DataContext.jsx';
 import App from './App.jsx';
+import AnimatedBackground from './components/AnimatedBackground.jsx';
 import './index.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <AnimatedBackground />
     <BrowserRouter>
       <AuthProvider>
         <DataProvider>
